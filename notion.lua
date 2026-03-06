@@ -97,7 +97,7 @@ function M.update_progress(api_key, log_id, current_page, total_pages)
     
     local payload = { 
         properties = { 
-            ["Progress"] = { number = current_page },
+            ["Curernt Page"] = { number = current_page },
             ["Total Pages"] = { number = total_pages },
             ["Last Synced"] = { date = { start = time_str } }
         } 
