@@ -6,13 +6,13 @@ local docsettings = require("frontend/docsettings")
 local util = require("util")
 local _ = require("gettext")
 
-local NotionSync = WidgetContainer:extend{ name = "notionsync", is_doc_only = true }
+local NotionSync = WidgetContainer:extend{ name = "notionkosync", is_doc_only = true }
 
 function NotionSync:init() self.ui.menu:registerToMainMenu(self) end
 
 function NotionSync:addToMainMenu(menu_items)
     menu_items.notion_sync_plugin = {
-        text = _("Notion Sync"),
+        text = _("Notion KoReader Sync"),
         sorting_hint = "tools",
         sub_item_table = {
             { text = _("Sync Highlights & Progress"), callback = function() self:runSync() end },

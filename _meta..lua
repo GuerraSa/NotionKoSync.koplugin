@@ -1,6 +1,6 @@
 local _ = require("gettext")
 return {
-    name = "NotionSync",
-    fullname = _("Notion Sync"),
+    name = "NotionKoSync",
+    fullname = _("Notion KoReader Sync"),
     description = _([[Sync annotations with Notion.]])
 }
